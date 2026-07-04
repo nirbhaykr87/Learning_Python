@@ -3,3 +3,4 @@ with open("sample.txt", "a+") as f:
     # f.seek(0)
     data = f.readline()
     print(data)
+    # This is new code
