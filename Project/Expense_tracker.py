@@ -31,13 +31,15 @@ def view_expense():
 
 
 def total_expense():
-    if expense !='NULL':
-        for values in expense.values():
-            total_sum +=values
-            print(f"Your total expense is Rs. {sum}")
+    if expense:
+        total_sum = 0
 
-        else:
-            print("Total sum is Rs. 0 ")
+        for value in expense.values():
+            total_sum += value
+
+        print(f"Your total expense is Rs. {total_sum}")
+    else:
+        print("Total sum is Rs. 0")
 
 
 
